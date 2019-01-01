@@ -28,6 +28,7 @@ class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
         title = ""
         scannerView = ZXingScannerView(this)
         scannerView.setAutoFocus(true)
+        scannerView.setAspectTolerance(0.5f);
         setContentView(scannerView)
     }
 
